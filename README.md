@@ -56,7 +56,7 @@ A sophisticated real-time stock analysis dashboard powered by dual AI models, pr
 
 ### 1. Clone the Repository
 ```bash
-git clone [repository-url](https://github.com/sarkarj/AIStockTracker.git)
+git repo clone sarkarj/AIStockTracker
 cd stock_tracker
 ```
 
