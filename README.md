@@ -92,8 +92,8 @@ CACHE_PATH=./insight_cache
 
 # Local LLM Configuration
 LLM_MODEL=ai/llama3.2:1B-Q4_0
-LLM_BASE_URL=http://host.docker.internal:12434/engines/llama.cpp/v1/chat/completions
-
+LLM_BASE_URL=http://host.docker.internal:12434/engines/llama.cpp/v1/chat/completions # From Docker
+# LLM_BASE_URL=http://localhost:12434/engines/llama.cpp/v1/chat/completions # Local
 # Google Gemini API Key (get from Google AI Studio)
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
@@ -108,6 +108,12 @@ mkdir insight_cache
 ### Start the Streamlit Dashboard
 ```bash
 streamlit run stock_tracker.py
+```
+
+### 🐳 In a Docker Container
+```bash
+docker compose build --no-cache
+docker compose up -d
 ```
 
 The application will be available at `http://localhost:8501`
