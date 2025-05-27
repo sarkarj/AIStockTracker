@@ -56,19 +56,20 @@ A sophisticated real-time stock analysis dashboard powered by dual AI models, pr
 
 ### 1. Clone the Repository
 ```bash
-git repo clone sarkarj/AIStockTracker
-cd stock_tracker
+git clone https://github.com/sarkarj/AIStockTracker.git
+cd AIStockTracker
 ```
 
 ### 2. Install Python Dependencies
 ```bash
-pip install streamlit pandas plotly yfinance requests python-dotenv
+pip install -r requirements.txt
 ```
 
 ### 3. Set Up Docker Model Runner
 ```bash
 # Pull and run the Docker Model Runner
-docker run -d -p 12434:12434 --name llama-runner ai/llama3.2:1B-Q4_0
+docker model pull ai/llama3.2:1B-Q4_0
+docker desktop enable model-runner --tcp 12434
 
 # Verify the model is running
 docker model list
@@ -184,7 +185,6 @@ lower_band = 20_MA - (2 * 20_STD)
 
 ### Local LLM (Llama 3.2)
 - **Model**: ai/llama3.2:1B-Q4_0
-- **Quantization**: 4-bit quantization for efficiency
 - **Size**: 727.75 MiB
 - **Response Time**: Typically 1-3 seconds
 - **Advantages**: Privacy, no API costs, offline capability
@@ -212,8 +212,6 @@ Each stock is displayed in a sophisticated card featuring:
 - **AI Insights**: Dual predictions with recommendations and timing
 
 ### Visual Elements
-- **Gradient Backgrounds**: Modern CSS gradients
-- **Animations**: Hover effects, loading skeletons, progress bars
 - **Color Coding**: Green (bullish), Red (bearish), Orange (neutral)
 - **Responsive Grid**: 2-column layout on desktop, single column on mobile
 
@@ -247,16 +245,16 @@ Each stock is displayed in a sophisticated card featuring:
 
 ### Common Issues
 
-#### Docker Model Runner Not Starting
+#### Docker Model Runner Not Responding
 ```bash
-# Check if Docker is running
-docker ps
+# List models available locally
+docker model list
 
-# Restart the model runner
-docker restart llama-runner
+# Check if the model runner is running
+docker model status
 
-# Check logs
-docker logs llama-runner
+Docker Model Runner is running
+Status:
 ```
 
 #### Gemini API Errors
@@ -277,34 +275,6 @@ rm -rf ./insight_cache/*
 # Restart application
 ```
 
-## 🚧 Development
-
-### Adding New Indicators
-```python
-def calculate_new_indicator(df):
-    # Implement your indicator logic
-    df['New_Indicator'] = your_calculation(df['Close'])
-    return df
-```
-
-### Customizing AI Prompts
-Modify the `format_prompt()` function to adjust AI model inputs:
-```python
-def format_prompt(symbol, indicators):
-    return f"Your custom prompt template for {symbol}..."
-```
-
-### Styling Modifications
-CSS styles are embedded in the Streamlit app. Modify the `st.markdown()` section with custom CSS.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -317,13 +287,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **Streamlit** for the amazing web framework
 - **Plotly** for interactive visualizations
 - **Claude AI** for application coding 
-
-## 📞 Support
-
-For issues, questions, or contributions:
-- Create an issue in the repository
-- Check existing documentation
-- Review troubleshooting section
 
 ---
 
