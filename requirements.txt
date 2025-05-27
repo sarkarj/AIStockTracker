@@ -1,0 +1,6 @@
+streamlit==1.35.0         # Required for the app UI
+yfinance>=0.2.40          # Required to fetch stock data
+pandas==2.2.2             # Required for data manipulation
+plotly==5.21.0            # Required for charts
+requests==2.31.0          # Required for LLM API calls
+python-dotenv==1.0.1      # To load environment variables from .env

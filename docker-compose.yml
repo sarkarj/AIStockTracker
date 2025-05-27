@@ -1,0 +1,17 @@
+services:
+  stock-tracker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: stock_tracker_app
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

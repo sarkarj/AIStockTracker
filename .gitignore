@@ -1,0 +1,46 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+
+# Environment variables and secrets
+.env
+*.env
+.env.*
+
+# Local development settings
+.vscode/
+.idea/
+*.swp
+
+# Streamlit
+.streamlit/
+.cache/
+
+# Output / local storage
+*.log
+*.db
+*.sqlite
+*.tar.gz
+*.zip
+*.bak
+*.tmp
+*.old
+*.json
+*.csv
+
+# Shelve database files
+*.dat
+*.dir
+*.bak
+*.db
+shelve_cache/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# OS generated
+ehthumbs.db
+Icon?

@@ -1,0 +1,54 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Byte-compiled files
+*.so
+
+# Env & config
+.env
+*.env
+.env.*
+
+# Package management
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Streamlit & cache
+.streamlit/
+.cache/
+.cache/*
+
+# OS/filesystem clutter
+.DS_Store
+Thumbs.db
+
+# Editor/IDE folders
+.vscode/
+.idea/
+*.swp
+
+# Git
+.git
+.gitignore
+
+# Logs
+*.log
+
+# Local data & results
+*.db
+*.sqlite
+*.tar.gz
+*.zip
+*.bak
+*.tmp
+*.old
+
+# Shelve DB
+*.dat
+*.dir
+*.bak
+*.db
+shelve_cache/
