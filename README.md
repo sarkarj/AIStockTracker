@@ -4,6 +4,10 @@ A sophisticated real-time stock analysis dashboard powered by dual AI models, pr
 
 ![Stock Tracker Demo](https://img.shields.io/badge/Status-Active-brightgreen) ![Python](https://img.shields.io/badge/Python-3.8+-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-Latest-red) ![Docker](https://img.shields.io/badge/Docker-Required-blue)
 
+![App Screenshot](./stock_Tracker.png)
+https://github.com/sarkarj/AIStockTracker/blob/main/stock_Tracker.png
+
+
 ## 🚀 Features
 
 ### 📊 Real-Time Stock Analysis
