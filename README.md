@@ -13,15 +13,13 @@ A sophisticated real-time stock analysis dashboard powered by dual AI models, pr
 - **Price Tracking**: Real-time price changes with visual trend indicators
 
 ### 🤖 Dual AI-Powered Insights
-- **Local LLM**: Llama 3.2 1B model running on Docker Model Runner
+- **Local LLM**: Llama 3.2 1B model running on [Docker Model Runner](https://hub.docker.com/r/ai/llama3.2)
 - **Google Gemini 2.0**: Cloud-based AI for comparative analysis
 - **Smart Caching**: Intelligent caching system to optimize API calls
 - **Recommendation Engine**: Buy/Sell/Hold recommendations from both models
 
 ### 🎨 Modern UI/UX
 - **Responsive Design**: Optimized for desktop and mobile devices
-- **Dark/Light Themes**: Modern gradient-based styling
-- **Animated Elements**: Smooth transitions and hover effects
 - **Real-time Updates**: Live refresh capabilities with loading states
 
 ### ⚡ Performance Optimized
@@ -33,7 +31,7 @@ A sophisticated real-time stock analysis dashboard powered by dual AI models, pr
 ## 🛠️ Technology Stack
 
 ### Backend
-- **Python 3.8+**: Core application language
+- **Python 3.9+**: Core application language
 - **Streamlit**: Web framework for rapid dashboard development
 - **yfinance**: Yahoo Finance API for market data
 - **pandas**: Data manipulation and analysis
@@ -52,7 +50,7 @@ A sophisticated real-time stock analysis dashboard powered by dual AI models, pr
 ## 📦 Installation & Setup
 
 ### Prerequisites
-- Python 3.8 or higher
+- Python 3.9 or higher
 - Docker Desktop
 - Git
 
@@ -318,6 +316,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **Docker Model Runner** for local LLM hosting
 - **Streamlit** for the amazing web framework
 - **Plotly** for interactive visualizations
+- **Claude AI** for application coding 
 
 ## 📞 Support
 
