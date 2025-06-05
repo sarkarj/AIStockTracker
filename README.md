@@ -2,7 +2,7 @@
 
 A sophisticated real-time stock analysis dashboard powered by dual AI models, providing comprehensive technical analysis and market insights through an elegant web interface.
 
-![Stock Tracker Demo](https://img.shields.io/badge/Status-Active-brightgreen) ![Python](https://img.shields.io/badge/Python-3.8+-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-Latest-red) ![Docker](https://img.shields.io/badge/Docker-Required-blue)
+![Stock Tracker Demo](https://img.shields.io/badge/Status-Active-brightgreen) ![Python](https://img.shields.io/badge/Python-3.8+-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-Latest-red) ![Docker](https://img.shields.io/badge/Docker-Required-blue) ![Yahoo Finance](https://img.shields.io/badge/Powered_by-Yahoo_Finance-6001D2) ![Docker Model Runner](https://img.shields.io/badge/Docker_Model_Runner-Available-2496ED?logo=docker&logoColor=white) ![Gemini API](https://img.shields.io/badge/Gemini-API-4285F4?logo=google&logoColor=white)
 
 ![App Screenshot](Stock_Tracker.png)
 
